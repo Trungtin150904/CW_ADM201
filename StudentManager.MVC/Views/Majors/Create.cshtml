@@ -1,0 +1,135 @@
+﻿@* @model StudentManager.Data.Entities.Major *@
+@model StudentManager.Common.DTOs.MajorDTO
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    // bool isCreate = false;
+    // if(Model == null || Model.Id == Guid.Empty)
+    // {
+    //     isCreate = true;
+    // }
+    // bool isCreate = Model == null || Model.Id == Guid.Empty ? true : false;
+    bool isCreate = Model == null || Model.Id == Guid.Empty;
+    string actionString = isCreate ? "Create" : "Edit";
+    string buttonString = isCreate ? "Create" : "Update";
+}
+
+<h1>@buttonString</h1>
+
+<h4>Major</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="@actionString">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <textarea asp-for="Description" rows="7" class="form-control"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MajorCode" class="control-label"></label>
+                <input asp-for="MajorCode" class="form-control" />
+                <span asp-validation-for="MajorCode" class="text-danger"></span>
+            </div>
+            <div class="form-group" style="text-align: center; margin: 10px;">
+                <input type="submit" value="@buttonString" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+
+    <div class="col-md-8" id="divMajorList">
+        @* @await Component.InvokeAsync("Major") *@
+        @await Component.InvokeAsync("Major")
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        function openModalDeleteMajor(idMajor){
+            $.ajax({
+                url: '/Majors/Delete',
+                data: {id: idMajor},
+                type: 'GET',
+                beforeSend: function () {
+
+                },
+                success: function (response) {
+                    openModal(response, "Delete a major");
+                },
+                error: function (xhr, status, error) {
+                    // Lỗi
+                    console.error("Error:", status, error);
+                },
+                complete: function () {
+                    // Luôn gọi dù thành công hay thất bại
+                    console.log("Request completed");
+                },
+                timeout: 10000                    // Giới hạn thời gian (ms)
+            });
+        }
+
+        function deleteMajor(idMajor){
+            let inputToken = document.querySelector("input[name='__RequestVerificationToken']");
+            $.ajax({
+                url: '/Majors/Delete',
+                type: 'POST',                     // Hoặc 'GET'
+                data: { id: idMajor, __RequestVerificationToken: inputToken?.value },            // Dữ liệu gửi lên server
+                beforeSend: function () {
+                    //=== Thường dùng để hiện thanh loading, hoặc vô hiệu nút nhấn ===//
+                    console.log("Sending...");
+                },
+                success: function (trenTroi) {
+                    // Xử lý khi gọi hàm Thành công
+                    if(trenTroi.isOK === true) {
+                        closeModal();
+                        reloadMajors();
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.error("Error:", status, error);
+                },
+                complete: function () {
+                    console.log("Request completed");
+                },
+                timeout: 10000  // Giới hạn thời gian (ms)
+            });
+        }
+
+        function reloadMajors(){
+            $.ajax({
+                url: '/Majors/Reload',
+                type: 'GET',
+                beforeSend: function () {
+
+                },
+                success: function (response) {
+                    let divMajorList = document.getElementById("divMajorList");
+                    if(divMajorList) {
+                        divMajorList.innerHTML = response;
+                    }
+                },
+                error: function (xhr, status, error) {
+                    // Lỗi
+                    console.error("Error:", status, error);
+                },
+                complete: function () {
+                    // Luôn gọi dù thành công hay thất bại
+                    console.log("Request completed");
+                },
+                timeout: 10000                    // Giới hạn thời gian (ms)
+            });
+        }
+    </script>
+}

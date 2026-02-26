@@ -1,0 +1,110 @@
+﻿@model IEnumerable<StudentManager.Data.Entities.StudentClass>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    @* <a asp-action="Create">Create New</a> *@
+    <button type="button" class="btn btn-info" onclick="openCreateClassModal()">Create new</button>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="tbodyStudentClassList">
+        @await Component.InvokeAsync("StudentClassList")
+    </tbody>
+</table>
+
+@section Scripts{
+    <script>
+        function openModalDeleteClass(idClass){
+            $.ajax({
+                url: '/StudentClasses/Delete',
+                data: {id: idClass},
+                type: 'GET',
+                beforeSend: function () {
+
+                },
+                success: function (response) {
+                    openModal(response, "Delete a class");
+                },
+                error: function (xhr, status, error) {
+                    // Lỗi
+                    console.error("Error:", status, error);
+                },
+                complete: function () {
+                    // Luôn gọi dù thành công hay thất bại
+                    console.log("Request completed");
+                },
+                timeout: 10000                    // Giới hạn thời gian (ms)
+            });
+        }
+
+        function deleteClass(idClass) {
+            let inputToken = document.querySelector("input[name='__RequestVerificationToken']");
+            $.ajax({
+                url: '/StudentClasses/Delete',
+                type: 'POST',                     // Hoặc 'GET'
+                data: { id: idClass, __RequestVerificationToken: inputToken?.value },            // Dữ liệu gửi lên server
+                beforeSend: function () {
+                    //=== Thường dùng để hiện thanh loading, hoặc vô hiệu nút nhấn ===//
+                    console.log("Sending...");
+                },
+                success: function (trenTroi) {
+                    // Xử lý khi gọi hàm Thành công
+                    // alert(trenTroi.message + trenTroi.isOK);
+                    if(trenTroi.isOK === true) {
+                        closeModal();
+                        reloadStudentClasses();
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.error("Error:", status, error);
+                },
+                complete: function () {
+                    console.log("Request completed");
+                },
+                timeout: 10000  // Giới hạn thời gian (ms)
+            });
+        }
+
+        function reloadStudentClasses() {
+            $.ajax({
+                url: '/StudentClasses/Refresh',
+                // data: {id: idClass},
+                type: 'GET',
+                beforeSend: function () {
+
+                },
+                success: function (response) {
+                    let tbodyStudentClassList = document.getElementById("tbodyStudentClassList");
+                    if(tbodyStudentClassList) {
+                        tbodyStudentClassList.innerHTML = response;
+                    }
+                },
+                error: function (xhr, status, error) {
+                    // Lỗi
+                    console.error("Error:", status, error);
+                },
+                complete: function () {
+                    // Luôn gọi dù thành công hay thất bại
+                    console.log("Request completed");
+                },
+                timeout: 10000                    // Giới hạn thời gian (ms)
+            });
+        }
+    </script>
+            }

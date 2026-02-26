@@ -1,0 +1,17 @@
+C:\Mac\Home\Desktop\StudentManager\StudentManager.Services\bin\Debug\net10.0\StudentManager.Services.deps.json
+C:\Mac\Home\Desktop\StudentManager\StudentManager.Services\bin\Debug\net10.0\StudentManager.Services.dll
+C:\Mac\Home\Desktop\StudentManager\StudentManager.Services\bin\Debug\net10.0\StudentManager.Services.pdb
+C:\Mac\Home\Desktop\StudentManager\StudentManager.Services\bin\Debug\net10.0\StudentManager.Common.dll
+C:\Mac\Home\Desktop\StudentManager\StudentManager.Services\bin\Debug\net10.0\StudentManager.Data.dll
+C:\Mac\Home\Desktop\StudentManager\StudentManager.Services\bin\Debug\net10.0\StudentManager.Data.pdb
+C:\Mac\Home\Desktop\StudentManager\StudentManager.Services\bin\Debug\net10.0\StudentManager.Common.pdb
+C:\Mac\Home\Desktop\StudentManager\StudentManager.Services\obj\Debug\net10.0\StudentManager.Services.csproj.AssemblyReference.cache
+C:\Mac\Home\Desktop\StudentManager\StudentManager.Services\obj\Debug\net10.0\StudentManager.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Mac\Home\Desktop\StudentManager\StudentManager.Services\obj\Debug\net10.0\StudentManager.Services.AssemblyInfoInputs.cache
+C:\Mac\Home\Desktop\StudentManager\StudentManager.Services\obj\Debug\net10.0\StudentManager.Services.AssemblyInfo.cs
+C:\Mac\Home\Desktop\StudentManager\StudentManager.Services\obj\Debug\net10.0\StudentManager.Services.csproj.CoreCompileInputs.cache
+C:\Mac\Home\Desktop\StudentManager\StudentManager.Services\obj\Debug\net10.0\StudentM.2569715A.Up2Date
+C:\Mac\Home\Desktop\StudentManager\StudentManager.Services\obj\Debug\net10.0\StudentManager.Services.dll
+C:\Mac\Home\Desktop\StudentManager\StudentManager.Services\obj\Debug\net10.0\refint\StudentManager.Services.dll
+C:\Mac\Home\Desktop\StudentManager\StudentManager.Services\obj\Debug\net10.0\StudentManager.Services.pdb
+C:\Mac\Home\Desktop\StudentManager\StudentManager.Services\obj\Debug\net10.0\ref\StudentManager.Services.dll

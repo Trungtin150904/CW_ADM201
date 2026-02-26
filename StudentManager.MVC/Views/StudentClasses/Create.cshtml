@@ -1,0 +1,55 @@
+﻿@model StudentManager.MVC.Models.StudentClassVM
+
+@{
+    // ViewData["Title"] = "Create";
+    // Layout = "~/Views/Shared/_Layout.cshtml";
+    bool isCreate = Model == null || Model.Id == Guid.Empty;
+    string actionString = isCreate ? "Create" : "Edit";
+    string buttonString = isCreate ? "Create" : "Update";
+    string onclickFunction = isCreate ? "createClass();" : "updateClass();";
+}
+
+<h1>Create</h1>
+
+<h4>StudentClass</h4>
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <form id="formCreateClass" asp-action="@actionString">
+            @if (!isCreate)
+            {
+                <input type="hidden" asp-for="Id" class="form-control" />
+            }
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <textarea asp-for="Description" rows="7" class="form-control"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group" style="text-align: center;">
+                <input type="button" onclick="@onclickFunction" value="@buttonString" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+        <script>
+            // document.addEventListener("DOMContentLoaded", function () {
+            //     console.log("DOM đã load xong");
+            //     openModal("Add Class");
+            // });
+        </script>
+}

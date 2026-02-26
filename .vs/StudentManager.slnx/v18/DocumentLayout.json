@@ -1,0 +1,218 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Mac\\Home\\Desktop\\StudentManager\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{58E6A64D-FAF8-3ADB-BF4C-A94E62F9B2C1}|StudentManager.MVC\\StudentManager.MVC.csproj|c:\\mac\\home\\desktop\\studentmanager\\studentmanager.mvc\\mappers\\studentmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58E6A64D-FAF8-3ADB-BF4C-A94E62F9B2C1}|StudentManager.MVC\\StudentManager.MVC.csproj|solutionrelative:studentmanager.mvc\\mappers\\studentmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58E6A64D-FAF8-3ADB-BF4C-A94E62F9B2C1}|StudentManager.MVC\\StudentManager.MVC.csproj|c:\\mac\\home\\desktop\\studentmanager\\studentmanager.mvc\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58E6A64D-FAF8-3ADB-BF4C-A94E62F9B2C1}|StudentManager.MVC\\StudentManager.MVC.csproj|solutionrelative:studentmanager.mvc\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58E6A64D-FAF8-3ADB-BF4C-A94E62F9B2C1}|StudentManager.MVC\\StudentManager.MVC.csproj|c:\\mac\\home\\desktop\\studentmanager\\studentmanager.mvc\\helpers\\mediahelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58E6A64D-FAF8-3ADB-BF4C-A94E62F9B2C1}|StudentManager.MVC\\StudentManager.MVC.csproj|solutionrelative:studentmanager.mvc\\helpers\\mediahelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E71C2827-29FA-4F91-9FEF-2DB1DDB2C4EE}|StudentManager.Services\\StudentManager.Services.csproj|c:\\mac\\home\\desktop\\studentmanager\\studentmanager.services\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E71C2827-29FA-4F91-9FEF-2DB1DDB2C4EE}|StudentManager.Services\\StudentManager.Services.csproj|solutionrelative:studentmanager.services\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D79D0887-FA26-41D4-B661-B32DE63B471E}|StudentManager.Common\\StudentManager.Common.csproj|c:\\mac\\home\\desktop\\studentmanager\\studentmanager.common\\dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D79D0887-FA26-41D4-B661-B32DE63B471E}|StudentManager.Common\\StudentManager.Common.csproj|solutionrelative:studentmanager.common\\dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{095336DD-58BA-6C29-34A5-A0C286C44D05}|StudentManager.Data\\StudentManager.Data.csproj|c:\\mac\\home\\desktop\\studentmanager\\studentmanager.data\\interfaces\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{095336DD-58BA-6C29-34A5-A0C286C44D05}|StudentManager.Data\\StudentManager.Data.csproj|solutionrelative:studentmanager.data\\interfaces\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{095336DD-58BA-6C29-34A5-A0C286C44D05}|StudentManager.Data\\StudentManager.Data.csproj|c:\\mac\\home\\desktop\\studentmanager\\studentmanager.data\\interfaces\\imajorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{095336DD-58BA-6C29-34A5-A0C286C44D05}|StudentManager.Data\\StudentManager.Data.csproj|solutionrelative:studentmanager.data\\interfaces\\imajorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E71C2827-29FA-4F91-9FEF-2DB1DDB2C4EE}|StudentManager.Services\\StudentManager.Services.csproj|c:\\mac\\home\\desktop\\studentmanager\\studentmanager.services\\implementations\\studentclassservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E71C2827-29FA-4F91-9FEF-2DB1DDB2C4EE}|StudentManager.Services\\StudentManager.Services.csproj|solutionrelative:studentmanager.services\\implementations\\studentclassservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58E6A64D-FAF8-3ADB-BF4C-A94E62F9B2C1}|StudentManager.MVC\\StudentManager.MVC.csproj|c:\\mac\\home\\desktop\\studentmanager\\studentmanager.mvc\\views\\students\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{58E6A64D-FAF8-3ADB-BF4C-A94E62F9B2C1}|StudentManager.MVC\\StudentManager.MVC.csproj|solutionrelative:studentmanager.mvc\\views\\students\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E71C2827-29FA-4F91-9FEF-2DB1DDB2C4EE}|StudentManager.Services\\StudentManager.Services.csproj|c:\\mac\\home\\desktop\\studentmanager\\studentmanager.services\\implementations\\majorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E71C2827-29FA-4F91-9FEF-2DB1DDB2C4EE}|StudentManager.Services\\StudentManager.Services.csproj|solutionrelative:studentmanager.services\\implementations\\majorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{095336DD-58BA-6C29-34A5-A0C286C44D05}|StudentManager.Data\\StudentManager.Data.csproj|c:\\mac\\home\\desktop\\studentmanager\\studentmanager.data\\interfaces\\istudentclassservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{095336DD-58BA-6C29-34A5-A0C286C44D05}|StudentManager.Data\\StudentManager.Data.csproj|solutionrelative:studentmanager.data\\interfaces\\istudentclassservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58E6A64D-FAF8-3ADB-BF4C-A94E62F9B2C1}|StudentManager.MVC\\StudentManager.MVC.csproj|c:\\mac\\home\\desktop\\studentmanager\\studentmanager.mvc\\views\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{58E6A64D-FAF8-3ADB-BF4C-A94E62F9B2C1}|StudentManager.MVC\\StudentManager.MVC.csproj|solutionrelative:studentmanager.mvc\\views\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 229,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentsController.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\StudentManager\\StudentManager.MVC\\Controllers\\StudentsController.cs",
+              "RelativeDocumentMoniker": "StudentManager.MVC\\Controllers\\StudentsController.cs",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\StudentManager\\StudentManager.MVC\\Controllers\\StudentsController.cs",
+              "RelativeToolTip": "StudentManager.MVC\\Controllers\\StudentsController.cs",
+              "ViewState": "AgIAAI4AAABAAgAAAAAQwKMAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T09:10:07.758Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentMapper.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\StudentManager\\StudentManager.MVC\\Mappers\\StudentMapper.cs",
+              "RelativeDocumentMoniker": "StudentManager.MVC\\Mappers\\StudentMapper.cs",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\StudentManager\\StudentManager.MVC\\Mappers\\StudentMapper.cs",
+              "RelativeToolTip": "StudentManager.MVC\\Mappers\\StudentMapper.cs",
+              "ViewState": "AgIAABgAAABAAAAAAAAcwB4AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T09:47:12.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MediaHelper.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\StudentManager\\StudentManager.MVC\\Helpers\\MediaHelper.cs",
+              "RelativeDocumentMoniker": "StudentManager.MVC\\Helpers\\MediaHelper.cs",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\StudentManager\\StudentManager.MVC\\Helpers\\MediaHelper.cs",
+              "RelativeToolTip": "StudentManager.MVC\\Helpers\\MediaHelper.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T09:39:40.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StudentDTO.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\StudentManager\\StudentManager.Common\\DTOs\\StudentDTO.cs",
+              "RelativeDocumentMoniker": "StudentManager.Common\\DTOs\\StudentDTO.cs",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\StudentManager\\StudentManager.Common\\DTOs\\StudentDTO.cs",
+              "RelativeToolTip": "StudentManager.Common\\DTOs\\StudentDTO.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAhwBUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T09:37:10.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\StudentManager\\StudentManager.MVC\\Views\\Students\\Delete.cshtml",
+              "RelativeDocumentMoniker": "StudentManager.MVC\\Views\\Students\\Delete.cshtml",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\StudentManager\\StudentManager.MVC\\Views\\Students\\Delete.cshtml",
+              "RelativeToolTip": "StudentManager.MVC\\Views\\Students\\Delete.cshtml",
+              "ViewState": "AgIAAB0AAAAAmpmZmRkWwDgAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-25T09:12:38.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StudentClassService.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\StudentManager\\StudentManager.Services\\Implementations\\StudentClassService.cs",
+              "RelativeDocumentMoniker": "StudentManager.Services\\Implementations\\StudentClassService.cs",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\StudentManager\\StudentManager.Services\\Implementations\\StudentClassService.cs",
+              "RelativeToolTip": "StudentManager.Services\\Implementations\\StudentClassService.cs",
+              "ViewState": "AgIAAA0AAADAmZmZmZkWwBcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T08:57:30.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IStudentClassService.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\StudentManager\\StudentManager.Data\\Interfaces\\IStudentClassService.cs",
+              "RelativeDocumentMoniker": "StudentManager.Data\\Interfaces\\IStudentClassService.cs",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\StudentManager\\StudentManager.Data\\Interfaces\\IStudentClassService.cs",
+              "RelativeToolTip": "StudentManager.Data\\Interfaces\\IStudentClassService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T08:56:22.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MajorService.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\StudentManager\\StudentManager.Services\\Implementations\\MajorService.cs",
+              "RelativeDocumentMoniker": "StudentManager.Services\\Implementations\\MajorService.cs",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\StudentManager\\StudentManager.Services\\Implementations\\MajorService.cs",
+              "RelativeToolTip": "StudentManager.Services\\Implementations\\MajorService.cs",
+              "ViewState": "AgIAAAgAAACA/////38ZwAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T08:49:29.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IMajorService.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\StudentManager\\StudentManager.Data\\Interfaces\\IMajorService.cs",
+              "RelativeDocumentMoniker": "StudentManager.Data\\Interfaces\\IMajorService.cs",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\StudentManager\\StudentManager.Data\\Interfaces\\IMajorService.cs",
+              "RelativeToolTip": "StudentManager.Data\\Interfaces\\IMajorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T08:49:04.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\StudentManager\\StudentManager.MVC\\Views\\Students\\Index.cshtml",
+              "RelativeDocumentMoniker": "StudentManager.MVC\\Views\\Students\\Index.cshtml",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\StudentManager\\StudentManager.MVC\\Views\\Students\\Index.cshtml",
+              "RelativeToolTip": "StudentManager.MVC\\Views\\Students\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-25T08:46:43.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\StudentManager\\StudentManager.Services\\Implementations\\StudentService.cs",
+              "RelativeDocumentMoniker": "StudentManager.Services\\Implementations\\StudentService.cs",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\StudentManager\\StudentManager.Services\\Implementations\\StudentService.cs",
+              "RelativeToolTip": "StudentManager.Services\\Implementations\\StudentService.cs",
+              "ViewState": "AgIAAA0AAABAmpmZmZkuwCUAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T07:05:10.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IStudentService.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Desktop\\StudentManager\\StudentManager.Data\\Interfaces\\IStudentService.cs",
+              "RelativeDocumentMoniker": "StudentManager.Data\\Interfaces\\IStudentService.cs",
+              "ToolTip": "C:\\Mac\\Home\\Desktop\\StudentManager\\StudentManager.Data\\Interfaces\\IStudentService.cs",
+              "RelativeToolTip": "StudentManager.Data\\Interfaces\\IStudentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T06:54:49.228Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
