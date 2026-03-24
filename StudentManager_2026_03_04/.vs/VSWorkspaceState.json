@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\StudentManager",
+    "\\StudentManager\\LinkShortener.API",
+    "\\StudentManager\\LinkShortener.API\\Controllers"
+  ],
+  "SelectedNode": "\\StudentManager\\LinkShortener.API\\Controllers\\ShortUrlController.cs",
+  "PreviewInSolutionExplorer": false
+}
