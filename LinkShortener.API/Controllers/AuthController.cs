@@ -31,7 +31,7 @@ namespace StudentManager.API.Controllers
 
             var existingUser = await _userManager.FindByEmailAsync(dto.Email);
             if (existingUser != null)
-                return BadRequest(new { error = "Email đã được sử dụng." });
+                return BadRequest(new { error = "Email has already been used." });
 
             var user = new IdentityUser
             {
@@ -47,7 +47,7 @@ namespace StudentManager.API.Controllers
             // Gán role User mặc định
             await _userManager.AddToRoleAsync(user, "User");
 
-            return Ok(new { message = "Đăng ký thành công!" });
+            return Ok(new { message = "Registration successful!" });
         }
 
         /// <summary>POST api/auth/login — Đăng nhập, nhận Access + Refresh Token</summary>
@@ -56,11 +56,11 @@ namespace StudentManager.API.Controllers
         {
             var user = await _userManager.FindByEmailAsync(dto.Email);
             if (user == null)
-                return Unauthorized(new { error = "Email hoặc mật khẩu không đúng." });
+                return Unauthorized(new { error = "Incorrect email or password." });
 
             var isPasswordValid = await _userManager.CheckPasswordAsync(user, dto.Password);
             if (!isPasswordValid)
-                return Unauthorized(new { error = "Email hoặc mật khẩu không đúng." });
+                return Unauthorized(new { error = "Incorrect email or password." });
 
             var roles = await _userManager.GetRolesAsync(user);
             var accessToken = await _tokenService.GenerateAccessTokenAsync(user);
@@ -103,7 +103,7 @@ namespace StudentManager.API.Controllers
             if (userId != null)
                 await _tokenService.RevokeAllRefreshTokensAsync(userId);
 
-            return Ok(new { message = "Đăng xuất thành công." });
+            return Ok(new { message = "Logout successful." });
         }
 
         /// <summary>GET api/auth/me — Xem thông tin user hiện tại</summary>
