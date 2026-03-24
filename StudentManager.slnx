@@ -1,7 +1,7 @@
 <Solution>
-  <Project Path="StudentManager.API/StudentManager.API.csproj" Id="08aae70c-ab79-4eda-b341-c222a1252bea" />
-  <Project Path="StudentManager.Common/StudentManager.Common.csproj" Id="d79d0887-fa26-41d4-b661-b32de63b471e" />
-  <Project Path="StudentManager.Data/StudentManager.Data.csproj" />
-  <Project Path="StudentManager.MVC/StudentManager.MVC.csproj" />
-  <Project Path="StudentManager.Services/StudentManager.Services.csproj" Id="e71c2827-29fa-4f91-9fef-2db1ddb2c4ee" />
+  <Project Path="LinkShortener.API\LinkShortener.API.csproj" Id="08aae70c-ab79-4eda-b341-c222a1252bea" />
+  <Project Path="LinkShortener.Common/LinkShortener.Common.csproj" Id="d79d0887-fa26-41d4-b661-b32de63b471e" />
+  <Project Path="LinkShortener.Data/LinkShortener.Data.csproj" />
+  <Project Path="LinkShortener.MVC/LinkShortener.MVC.csproj" />
+  <Project Path="LinkShortener.Services/LinkShortener.Services.csproj" Id="e71c2827-29fa-4f91-9fef-2db1ddb2c4ee" />
 </Solution>

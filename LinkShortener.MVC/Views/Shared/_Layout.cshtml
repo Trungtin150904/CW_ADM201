@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - LinkZap</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/LinkShortener.MVC.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">LinkZap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        @if (User.Identity?.IsAuthenticated == true)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="ShortUrl" asp-action="Index">
+                                    Short URL
+                                </a>
+                            </li>
+                        }
+                    </ul>
+
+                    <ul class="navbar-nav ms-auto">
+                        @if (User.Identity?.IsAuthenticated == true)
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark" href="#" role="button"
+                                       data-bs-toggle="dropdown">
+                                    👤 @User.Identity.Name
+                                    @if (User.IsInRole("Admin"))
+                                    {
+                                        <span class="badge bg-danger ms-1 small">Admin</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-secondary ms-1 small">User</span>
+                                    }
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <form asp-controller="Authentication" asp-action="Logout" method="post">
+                                            <button type="submit" class="dropdown-item text-danger">
+                                                🚪 Log out
+                                            </button>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Authentication" asp-action="Login">
+                                    Sign in
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Authentication" asp-action="Register">
+                                    Sign up
+                                </a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted fixed-bottom bg-white pb-3">
+        <div class="container-fluid d-flex align-items-center ps-5">
+            <span class="me-2">&copy; 2026 - LinkZap</span>
+            <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <!-- Button trigger modal -->
+    <button type="button" onclick="openModal();" class="btn btn-primary visually-hidden" data-bs-toggle="modal" data-bs-target="#myMusicModal">
+        Launch demo XXXX modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myMusicModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="myMusicModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="myMusicModalBody" class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+    <script>
+            const modalEl = document.getElementById('myMusicModal');
+            const modal = new bootstrap.Modal(modalEl);
+
+            function openModal(bodyHTML, title = null) {
+                let myMusicModalBody = document.getElementById("myMusicModalBody");
+                if (myMusicModalBody) {
+                    myMusicModalBody.innerHTML = bodyHTML;
+                }
+                if (title) {
+                    let myMusicModalLabel = document.getElementById("myMusicModalLabel");
+                    if (myMusicModalLabel) {
+                        myMusicModalLabel.innerText = title;
+                    }
+                }
+
+                modal.show();
+            }
+            function closeModal() {
+                let modal = bootstrap.Modal.getInstance(modalEl);
+                console.log("D9a4 vao day: ", modal);
+
+                modal.hide();
+                // modal.hideModal();
+            
+            }
+
+            function openCreateClassModal() {
+                $.ajax({
+                    url: '/StudentClasses/Create',
+                    type: 'GET',
+                    beforeSend: function() {
+
+                    },
+                    success: function(response) {
+                        openModal(response, "Create a new class");
+                    },
+                    error: function(xhr, status, error) {
+                        // Lỗi
+                        console.error("Error:", status, error);
+                    },
+                    complete: function() {
+                        // Luôn gọi dù thành công hay thất bại
+                        console.log("Request completed");
+                    },
+                    timeout: 10000                    // Giới hạn thời gian (ms)
+                });
+            }
+
+            function createClass() {
+                let formCreateClass = document.getElementById("formCreateClass");
+                let id = formCreateClass.querySelector("input[Id='Id']")?.value;
+                let name = formCreateClass.querySelector("input[Id='Name']")?.value;
+                let description = formCreateClass.querySelector("textarea[Id='Description']")?.value;
+                let studentClassVM = {
+                    id: id,
+                    name: name,
+                    description
+                }
+                let inputToken = document.querySelector("input[name='__RequestVerificationToken']");
+                $.ajax({
+                    url: '/StudentClasses/Create',
+                    type: 'POST',
+                    data: { studentClassVM: studentClassVM, __RequestVerificationToken: inputToken?.value },
+                    beforeSend: function() {
+                        console.log("Sending...");
+                    },
+                    success: function(trenTroi) {
+                        if (trenTroi.isOK === true) {
+                            closeModal();
+                        }
+                    },
+                    error: function(xhr, status, error) {
+                        console.error("Error:", status, error);
+                    },
+                    complete: function() {
+                        console.log("Request completed");
+                    },
+                    timeout: 10000
+                });
+
+            }
+    </script>
+</body>
+</html>
