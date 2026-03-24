@@ -55,11 +55,11 @@ namespace LinkShortener.MVC.Controllers
                 }
                 if (result.IsLockedOut)
                 {
-                    ModelState.AddModelError(string.Empty, "Tài khoản bị khóa. Thử lại sau.");
+                    ModelState.AddModelError(string.Empty, "Your account is locked. Try again later.");
                     return View(loginVM);
                 }
 
-                ModelState.AddModelError(string.Empty, "Email hoặc mật khẩu không đúng.");
+                ModelState.AddModelError(string.Empty, "Incorrect email or password.");
             }
             return View(loginVM);
         }

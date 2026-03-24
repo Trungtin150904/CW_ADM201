@@ -79,7 +79,7 @@ namespace StudentManager.API.Controllers
             var originalUrl = await _service.GetOriginalUrlAsync(code);
 
             if (originalUrl == null)
-                return NotFound(new { error = "Short URL không tồn tại." });
+                return NotFound(new { error = "The short URL does not exist." });
 
             return Redirect(originalUrl);
         }

@@ -60,7 +60,7 @@ namespace LinkShortener.MVC.Controllers
         {
             await _service.IncrementClickCountAsync(code);
             var originalUrl = await _service.GetOriginalUrlAsync(code);
-            if (originalUrl == null) return NotFound("Short URL không tồn tại.");
+            if (originalUrl == null) return NotFound("The short URL does not exist.");
             return Redirect(originalUrl);
         }
     }
